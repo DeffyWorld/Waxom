@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function() {
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('is-active');
         menu.classList.toggle('header__nav_hamburger-menu-active');
-        hamburger.style.position = 'fixed';
+        hamburger.classList.toggle('fixed');
     });
 
 
