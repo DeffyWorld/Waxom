@@ -28,34 +28,53 @@
     <header class="header">
         <div class="container">
             <div class="row">
+                <div class="d-block d-xl-none">
+                    <button class="hamburger hamburger--collapse header__nav_hamburger" type="button">
+                        <span class="hamburger-box">
+                            <span class="hamburger-inner"></span>
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="d-block d-xl-none">
+            <div class="header__nav_hamburger-menu">
+                <a href="" class="header__nav_hamburger-menu_item">Home</a>
+                <a href="" class="header__nav_hamburger-menu_item">About Us</a>
+                <a href="" class="header__nav_hamburger-menu_item">Portfolio</a>
+                <a href="" class="header__nav_hamburger-menu_item">Features</a>
+                <a href="" class="header__nav_hamburger-menu_item">Blog</a>
+                <a href="" class="header__nav_hamburger-menu_item">Pricing</a>
+                <a href="" class="header__nav_hamburger-menu_item">Shortcodes</a>
+                <a href="" class="header__nav_hamburger-menu_item">Contact</a>
+            </div>
+        </div>
+        
+        <div class="swiper-container header__slider">
+            <div class="swiper-wrapper header__slider_wrapper">
+                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-1"></div>
+                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-2"></div>
+                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-3"></div>
+                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-4"></div>
+                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-5"></div>
+            </div>
+
+            <div class="swiper-pagination header__slider_pagination"></div>
+        </div>
+
+        <div class="container">
+            <div class="row">
                 <div class="header__nav d-flex">
-                    <div class="d-block d-lg-none">
-                        <button class="hamburger hamburger--collapse header__nav_hamburger" type="button">
-                            <span class="hamburger-box">
-                                <span class="hamburger-inner"></span>
-                            </span>
-                        </button>
-                        <div class="header__nav_hamburger-menu">
-                            <a href="" class="header__nav_hamburger-menu_item">Home</a>
-                            <a href="" class="header__nav_hamburger-menu_item">About Us</a>
-                            <a href="" class="header__nav_hamburger-menu_item">Portfolio</a>
-                            <a href="" class="header__nav_hamburger-menu_item">Features</a>
-                            <a href="" class="header__nav_hamburger-menu_item">Blog</a>
-                            <a href="" class="header__nav_hamburger-menu_item">Pricing</a>
-                            <a href="" class="header__nav_hamburger-menu_item">Shortcodes</a>
-                            <a href="" class="header__nav_hamburger-menu_item">Contact</a>
-                        </div>
-                    </div>
-                    <div class="col-3 d-flex">
+                    <div class="header__nav_logo col-1 col-xl-2 offset-5 offset-xl-0 d-flex">
                         <div class="header__nav_logo-icon">
                             <img src="img/logo.png" alt="">
                         </div>
-                        <div class="header__nav_logo-name d-none d-lg-block">
+                        <div class="header__nav_logo-name d-none d-xl-block">
                             Waxom
                         </div>
                     </div>
-                    <div class="col-7 offset-1">
-                        <div class="header__nav_menu d-none d-lg-flex">
+                    <div class="col-0 offset-0 col-xl-7 offset-xl-1">
+                        <div class="header__nav_menu d-none d-xl-flex">
                             <a href="" class="header__nav_menu_item">Home</a>
                             <a href="" class="header__nav_menu_item active-page">About Us</a>
                             <a href="" class="header__nav_menu_item">Portfolio</a>
@@ -66,8 +85,8 @@
                             <a href="" class="header__nav_menu_item">Contact</a>
                         </div>
                     </div>
-                    <div class="col-1 d-flex">
-                        <div class="header__nav_cart d-none d-lg-flex">
+                    <div class="col-1 offset-5 offset-xl-0 d-flex">
+                        <div class="header__nav_cart d-none d-xl-flex">
                             <img src="img/icon-cart.png" alt="">
                         </div>
                         <div class="header__nav_search d-flex">
@@ -92,7 +111,7 @@
                             Portfolio PSD Template
                         </div>
                     </div>
-                    <div class="col-6 offset-3">
+                    <div class="col-12 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
                         <div class="header__text">
                             Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
                         </div>
@@ -105,25 +124,11 @@
                 </div>
             </div>
         </div>
-
-
-        <div class="swiper-container header__slider">
-            <div class="swiper-wrapper header__slider_wrapper">
-                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-1"></div>
-                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-2"></div>
-                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-3"></div>
-                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-4"></div>
-                <div class="swiper-slide header__slider_wrapper_slide header__slider_wrapper_slide-5"></div>
-            </div>
-
-            <div class="header__slider_button-next d-none d-lg-block">
-                <img src="img/left.png" alt="">
-            </div>
-            <div class="header__slider_button-prev d-none d-lg-block">
-                <img src="img/left.png" alt="">
-            </div>
-
-            <div class="swiper-pagination header__slider_pagination"></div>
+        <div class="header__slider_button-next">
+            <img src="img/left.png" alt="">
+        </div>
+        <div class="header__slider_button-prev">
+            <img src="img/left.png" alt="">
         </div>
     </header>
 
@@ -139,7 +144,7 @@
 
 
 
-    <section class="portfolio">
+    <section class="portfolio d-none d-lg-block">
         <div class="container">
             <div class="portfolio__tabs">
                 <div class="row"> 
@@ -311,7 +316,7 @@
             </div>
 
             <div class="row">
-                <div class="col-12 col-md-8 offset-2">
+                <div class="col-12 col-md-8 offset-md-2">
                     <div class="projects__description">
                         Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                     </div>
@@ -497,7 +502,7 @@
                 </div>
     
                 <div class="row">
-                    <div class="col-6 offset-3">
+                    <div class="col-12 col-md-6 offset-md-3">
                         <div class="video__description">
                             Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius, qui sequitur mutationem consuetudium.
                         </div>
@@ -516,7 +521,7 @@
 
         <div class="video__player">
             <div class="video__player_container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Lrj2Hq7xqQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Lrj2Hq7xqQ8" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <span class="video__player_close"></span>
         </div>
@@ -537,7 +542,7 @@
     <section class="excellent">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-5">
+                <div class="col-12 col-md-5 d-none d-lg-block">
                     <div class="excellent__image">
                         <img src="img/iPhone.jpg" alt="">
                     </div>
@@ -632,7 +637,7 @@
                         </div>
                     </div>
 
-                    <div class="statistic__item">
+                    <div class="statistic__item d-none d-sm-block">
                         <div class="statistic__item_image">
                             <img src="img/icon4.png" alt="">
                         </div>
@@ -647,7 +652,7 @@
                         </div>
                     </div>
 
-                    <div class="statistic__item">
+                    <div class="statistic__item d-none d-sm-block">
                         <div class="statistic__item_image">
                             <img src="img/icon5.png" alt="">
                         </div>
@@ -689,7 +694,7 @@
             </div>
 
             <div class="row">
-                <div class="col-8 offset-2">
+                <div class="col-12 col-md-8 offset-md-2">
                     <div class="recent__description">
                         Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
                     </div>
@@ -698,7 +703,7 @@
 
             <div class="recent__posts">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="recent__posts_item">
                             <div class="recent__posts_item_img">
                                 <img src="img/blog1.jpg" alt="">
@@ -717,7 +722,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="recent__posts_item">
                             <div class="recent__posts_item_img">
                                 <img src="img/blog2.jpg" alt="">
@@ -736,7 +741,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-md-4">
                         <div class="recent__posts_item">
                             <div class="recent__posts_item_img">
                                 <img src="img/blog3.jpg" alt="">
@@ -809,7 +814,7 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="footer__more">
                         <div class="d-flex align-items-center">
                             <div class="footer__more_logo">
@@ -828,7 +833,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="footer__recent">
                         <div class="footer__recent_title">
                             Recent Posts
@@ -862,7 +867,7 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="footer__twitter">
                         <div class="footer__twitter_title">
                             Our Twitter
@@ -890,16 +895,22 @@
                     </div>
                 </div>
 
-                <div class="col-3">
+                <div class="col-12 col-lg-3">
                     <div class="footer__widget">
                         <div class="footer__widget_title">
                             Dribbble Widget
                         </div>
-                        <div class="footer__widget_con">
+                        <div class="d-flex d-lg-none justify-content-between">
+                            <div class="footer__widget_con_item"><img src="img/con1.png" alt=""></div>
+                            <div class="footer__widget_con_item"><img src="img/con2.png" alt=""></div>
+                            <div class="footer__widget_con_item"><img src="img/con3.png" alt=""></div>
+                            <div class="footer__widget_con_item"><img src="img/con4.png" alt=""></div>
+                        </div>
+                        <div class="footer__widget_con d-none d-lg-flex">
                             <div class="footer__widget_con_item"><img src="img/con1.png" alt=""></div>
                             <div class="footer__widget_con_item"><img src="img/con2.png" alt=""></div>
                         </div>
-                        <div class="footer__widget_con">
+                        <div class="footer__widget_con d-none d-lg-flex">
                             <div class="footer__widget_con_item"><img src="img/con3.png" alt=""></div>
                             <div class="footer__widget_con_item"><img src="img/con4.png" alt=""></div>
                         </div>
